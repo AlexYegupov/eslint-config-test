@@ -13,14 +13,14 @@
     "prettify:fix": "prettier --write src/**/*.{js,jsx,ts,tsx}",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
+    "test": "concurrently 'yarn:test-*'",
     "test-base": "yarn --silent run eslint --config ./config-base.js ./test/test-base.js | grep '2 problems'",
     "test-react": "yarn --silent run eslint --config ./config-react.js ./test/test-react.jsx | grep '2 problems'",
     "test-ts": "yarn --silent run eslint --config ./config-ts.js ./test/test-ts.ts | grep '2 problems'",
-    "test-tsx": "yarn --silent run eslint --config ./config-ts.js ./test/test-tsx.tsx | grep '2 problems'",
-    "test": "concurrently 'yarn:test-*'"
+    "test-tsx": "yarn --silent run eslint --config ./config-ts.js ./test/test-tsx.tsx | grep '2 problems'"
   },
   "dependencies": {
-    "@wttsolutions/eslint-config": "^0.1.11",
+    "@wttsolutions/eslint-config": "*",
     "@yarnpkg/extensions": "^2.0.0"
   },
   "resolutions": {
