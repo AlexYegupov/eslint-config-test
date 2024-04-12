@@ -676,9 +676,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wttsolutions/eslint-config@portal:/home/av/dev/eslint-config::locator=test-project-berry%40workspace%3A.":
+"@wttsolutions/eslint-config@portal:/home/av/dev/eslint-config::locator=eslint-config-test%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "@wttsolutions/eslint-config@portal:/home/av/dev/eslint-config::locator=test-project-berry%40workspace%3A."
+  resolution: "@wttsolutions/eslint-config@portal:/home/av/dev/eslint-config::locator=eslint-config-test%40workspace%3A."
   dependencies:
     "@babel/core": "npm:^7.19.3"
     "@babel/eslint-parser": "npm:^7.19.1"
@@ -1477,6 +1477,20 @@ __metadata:
   checksum: 19f8c497d9bdc111a17a61b25ded97217be3755bbc4714477dfe535ed539dddcaf42ef5cf8bb97908b058260cf89a3d7c565cb0be31096cbcd39f4c2fa5fe43c
   languageName: node
   linkType: hard
+
+"eslint-config-test@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-test@workspace:."
+  dependencies:
+    "@types/eslint": "npm:^8"
+    "@wttsolutions/eslint-config": "npm:*"
+    "@yarnpkg/extensions": "npm:^2.0.0"
+    concurrently: "npm:^8.2.2"
+    eslint: "npm:^8.57.0"
+    prettier: "npm:^3.2.5"
+    typescript: "npm:^5.4.3"
+  languageName: unknown
+  linkType: soft
 
 "eslint-import-resolver-node@npm:^0.3.9":
   version: 0.3.9
@@ -3213,20 +3227,6 @@ __metadata:
   checksum: 6c4032340701a9950865f7ae8ef38578d8d7053f5e10518076e6554a9381fa91bd9c6850193695c141f32b21f979c985db07265a758867bac95de05f7d8aeb39
   languageName: node
   linkType: hard
-
-"test-project-berry@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "test-project-berry@workspace:."
-  dependencies:
-    "@types/eslint": "npm:^8"
-    "@wttsolutions/eslint-config": "npm:^0.1.11"
-    "@yarnpkg/extensions": "npm:^2.0.0"
-    concurrently: "npm:^8.2.2"
-    eslint: "npm:^8.57.0"
-    prettier: "npm:^3.2.5"
-    typescript: "npm:^5.4.3"
-  languageName: unknown
-  linkType: soft
 
 "text-table@npm:^0.2.0":
   version: 0.2.0

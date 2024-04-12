@@ -1,8 +1,9 @@
 {
-  "name": "test-project-berry",
+  "name": "eslint-config-test",
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
     "@types/eslint": "^8",
+    "@wttsolutions/eslint-config": "*",
     "concurrently": "^8.2.2",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
@@ -20,7 +21,6 @@
     "test-tsx": "yarn --silent run eslint --config ./config-ts.js ./test/test-tsx.tsx | grep '2 problems'"
   },
   "dependencies": {
-    "@wttsolutions/eslint-config": "*",
     "@yarnpkg/extensions": "^2.0.0"
   },
   "resolutions": {
