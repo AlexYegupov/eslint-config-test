@@ -7,4 +7,7 @@ project to test @wttsolutions/eslint-config usage
 yarn link ../eslint-config
 yarn add @wttsolutions/eslint-config@*
 
+?
+yarn remove @yarnpkg/extensions
+
 ```

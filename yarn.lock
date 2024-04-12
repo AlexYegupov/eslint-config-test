@@ -700,15 +700,6 @@ __metadata:
   languageName: node
   linkType: soft
 
-"@yarnpkg/extensions@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "@yarnpkg/extensions@npm:2.0.1"
-  peerDependencies:
-    "@yarnpkg/core": ^4.0.3
-  checksum: ca5352cfa40d6af610aafba58e21b291dbfca5fadd1872a109dd15eaa707c138b4861a1f66e934bc374df48925732113bc7f9f5de3ea20034e8a946b60fa971a
-  languageName: node
-  linkType: hard
-
 "acorn-jsx@npm:^5.3.2":
   version: 5.3.2
   resolution: "acorn-jsx@npm:5.3.2"
@@ -1484,7 +1475,6 @@ __metadata:
   dependencies:
     "@types/eslint": "npm:^8"
     "@wttsolutions/eslint-config": "npm:*"
-    "@yarnpkg/extensions": "npm:^2.0.0"
     concurrently: "npm:^8.2.2"
     eslint: "npm:^8.57.0"
     prettier: "npm:^3.2.5"
