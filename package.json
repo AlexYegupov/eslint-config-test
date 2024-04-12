@@ -1,4 +1,29 @@
 {
   "name": "test-project-berry",
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.0.2",
+  "devDependencies": {
+    "@types/eslint": "^8",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.3"
+  },
+  "scripts": {
+    "prettify": "prettier --check src/**/*.{js,jsx,ts,tsx}",
+    "prettify:fix": "prettier --write src/**/*.{js,jsx,ts,tsx}",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "test-base": "yarn --silent run eslint --config ./config-base.js ./test/test-base.js | grep '2 problems'",
+    "test-react": "yarn --silent run eslint --config ./config-react.js ./test/test-react.jsx | grep '2 problems'",
+    "test-ts": "yarn --silent run eslint --config ./config-ts.js ./test/test-ts.ts | grep '2 problems'",
+    "test-tsx": "yarn --silent run eslint --config ./config-ts.js ./test/test-tsx.tsx | grep '2 problems'",
+    "test": "concurrently 'yarn:test-*'"
+  },
+  "dependencies": {
+    "@wttsolutions/eslint-config": "^0.1.11",
+    "@yarnpkg/extensions": "^2.0.0"
+  },
+  "resolutions": {
+    "@wttsolutions/eslint-config": "portal:/home/av/dev/eslint-config"
+  }
 }
