@@ -2,6 +2,6 @@
 const component1 = <div>// incorrect comment</div>;
 
 // emit react/no-unknown-property
-const component2 = <div unknown="property"></div>;
+const component2 = <div unknown="property" id="test"></div>;
 
 console.log(component1, component2);
