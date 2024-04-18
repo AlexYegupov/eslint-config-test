@@ -11,12 +11,15 @@
     "yarn-upgrade-all": "^0.7.2"
   },
   "scripts": {
-    "test": "concurrently 'yarn:test-*' && echo 'ALL OK'",
-    "test-eslint-base": "yarn --silent run eslint --config ./config-base.js ./test/test-base.js | grep '2 problems'",
-    "test-eslint-react": "yarn --silent run eslint --config ./config-react.js ./test/test-react.jsx | grep '2 problems'",
-    "test-eslint-ts": "yarn --silent run eslint --config ./config-ts.js ./test/test-ts.ts | grep '2 problems'",
-    "test-eslint-tsx": "yarn --silent run eslint --config ./config-ts.js ./test/test-tsx.tsx | grep '2 problems'",
-    "test-prettier": "prettier test/test-prettier.js | grep \"  name: 'John',\""
+    "test": "concurrently 'yarn:test-*' && echo 'ALL TESTS OK'",
+    "test-eslint-base": "yarn --silent run eslint ./test/test-base.js | grep '2 problems'",
+    "test-eslint-react": "yarn --silent run eslint --no-eslintrc --config ./.eslintrc-react.js ./test/test-react.jsx | grep '2 problems'",
+    "test-eslint-ts": "yarn --silent run eslint --no-eslintrc --config ./.eslintrc-ts.js ./test/test-ts.ts | grep '2 problems'",
+    "test-eslint-tsx": "yarn --silent run eslint --no-eslintrc --config ./.eslintrc-ts.js ./test/test-tsx.tsx | grep '2 problems'",
+    "test-prettier-base": "prettier test/test-base.js | grep \"  name: 'John',\"",
+    "test-prettier-react": "prettier test/test-react.jsx | grep \"  name: 'John',\"",
+    "test-prettier-ts": "prettier test/test-ts.ts | grep \"  name: 'John',\"",
+    "test-prettier-tsx": "prettier test/test-tsx.tsx | grep \"  name: 'John',\""
   },
   "resolutions": {
     "@wttsolutions/eslint-config": "portal:/home/av/dev/eslint-config"
