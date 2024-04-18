@@ -1,4 +1,4 @@
-project to test @wttsolutions/eslint-config usage
+project to test new LOCALLY @wttsolutions/eslint-config(see package.json->resolutions)
 
 
 
@@ -11,7 +11,20 @@ yarn add @wttsolutions/eslint-config@*
 ?
 yarn remove @yarnpkg/extensions
 
+// to make possible to upgrade all packages:
+yarn add --dev yarn-upgrade-all
+
 ```
 
 # Notes
 - eslint seems like can check jsx files WITHOUT installing React
+
+
+# how to upgrade all packages
+```
+yarn yarn-upgrade-all
+```
+
+# resolve peer deps
+
+npx check-peer-dependencies --findSolutions

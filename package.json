@@ -3,18 +3,19 @@
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
     "@types/eslint": "^8",
-    "@wttsolutions/eslint-config": "*",
+    "@wttsolutions/eslint-config": "^0.1.11",
     "concurrently": "^8.2.2",
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
-    "typescript": "^5.4.3"
+    "eslint": "^8",
+    "prettier": "^3",
+    "typescript": "5.5.0-dev.20240417",
+    "yarn-upgrade-all": "^0.7.2"
   },
   "scripts": {
     "prettify": "prettier --check src/**/*.{js,jsx,ts,tsx}",
     "prettify:fix": "prettier --write src/**/*.{js,jsx,ts,tsx}",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
-    "test": "concurrently 'yarn:test-*'",
+    "test": "concurrently 'yarn:test-*' && echo 'ALL OK'",
     "test-base": "yarn --silent run eslint --config ./config-base.js ./test/test-base.js | grep '2 problems'",
     "test-react": "yarn --silent run eslint --config ./config-react.js ./test/test-react.jsx | grep '2 problems'",
     "test-ts": "yarn --silent run eslint --config ./config-ts.js ./test/test-ts.ts | grep '2 problems'",
