@@ -25,6 +25,6 @@ yarn add --dev yarn-upgrade-all
 yarn yarn-upgrade-all
 ```
 
-# resolve peer deps
+# Install peer deps
 
 npx check-peer-dependencies --findSolutions
