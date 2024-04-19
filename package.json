@@ -2,6 +2,7 @@
   "name": "eslint-config-test",
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
+    "@tsconfig/node12": "^12.1.3",
     "@types/eslint": "^8",
     "@wttsolutions/eslint-config": "^0.1.11",
     "concurrently": "^8.2.2",
@@ -19,7 +20,8 @@
     "test-prettier-base": "prettier test/test-base.js | grep \"  name: 'John',\"",
     "test-prettier-react": "prettier test/test-react.jsx | grep \"  name: 'John',\"",
     "test-prettier-ts": "prettier test/test-ts.ts | grep \"  name: 'John',\"",
-    "test-prettier-tsx": "prettier test/test-tsx.tsx | grep \"  name: 'John',\""
+    "test-prettier-tsx": "prettier test/test-tsx.tsx | grep \"  name: 'John',\"",
+    "test-ts-config": "yarn tsc --showConfig | jq '.compilerOptions.removeComments' |grep false"
   },
   "resolutions": {
     "@wttsolutions/eslint-config": "portal:/home/av/dev/eslint-config"

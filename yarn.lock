@@ -529,6 +529,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tsconfig/node12@npm:^12.1.3":
+  version: 12.1.3
+  resolution: "@tsconfig/node12@npm:12.1.3"
+  checksum: 1c02ecdd30e6a5ed87b8dc5af064103cb8a1a736f794bfe2f01d6fc33858788f4da062795570c399f4c60146dbb34a62a82a09bd5df756ac427055c165a42959
+  languageName: node
+  linkType: hard
+
 "@types/eslint@npm:^8":
   version: 8.56.9
   resolution: "@types/eslint@npm:8.56.9"
@@ -1494,6 +1501,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eslint-config-test@workspace:."
   dependencies:
+    "@tsconfig/node12": "npm:^12.1.3"
     "@types/eslint": "npm:^8"
     "@wttsolutions/eslint-config": "npm:^0.1.11"
     concurrently: "npm:^8.2.2"
